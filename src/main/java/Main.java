@@ -8,7 +8,17 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        System.out.println("Hello Java");
+
+        // Output di java
+        System.out.println("Belajar Java");
+        System.out.println("Good luck");
+        System.out.println(3 + 3);
+        System.out.println(true);
+
+        // print, tidak memuat baris baru
+        System.out.print(true);
+        System.out.print(false);
+
     }
 
 }
