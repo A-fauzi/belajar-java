@@ -1,16 +1,9 @@
-## Tipe data dibagi menjadi 2 kelompok
-> - Tipe data primitif termasuk: byte, short, int, long, float, double, booleandanchar
-> - Tipe data non primitif termasuk: seperti String, Array dan Class
+## Java Type Casting
 
-
-## Tipe Data Non Primitif
-> Tipe data non-primitif disebut tipe referensi karena merujuk pada objek.
+> Type casting is when you assign a value of one primitive data type to another type.
 > 
-> perbedaan utama antara tipe data primitif dan non-primitif adalah:
-> - Tipe primitif sudah ditentukan sebelumnya (sudah ditentukan) di Jawa. Tipe non-primitif dibuat oleh programmer dan tidak didefinisikan oleh Java (kecuali untuk String).
-> - Tipe non-primitif dapat digunakan untuk memanggil metode untuk melakukan operasi tertentu, sedangkan tipe primitif tidak bisa.
-> - Tipe primitif selalu memiliki nilai, sedangkan tipe non-primitif dapat berupa null.
-> - Tipe primitif dimulai dengan huruf kecil, sedangkan tipe non-primitif dimulai dengan huruf besar.
-> - Ukuran tipe primitif tergantung pada tipe data, sedangkan tipe non-primitif memiliki ukuran yang sama.
-> 
->   Contoh tipe non-primitif adalah Strings , Arrays , Classes , Interface , dll. Anda akan mempelajari lebih lanjut tentang ini di bab selanjutnya.
+> In Java, there are two types of casting:
+>  - Widening Casting (automatically) - converting a smaller type to a larger type size
+byte -> short -> char -> int -> long -> float -> double
+>  - Narrowing Casting (manually) - converting a larger type to a smaller size type
+     double -> float -> long -> int -> char -> short -> byte
