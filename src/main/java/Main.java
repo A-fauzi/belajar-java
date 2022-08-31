@@ -10,22 +10,11 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        // Declare variable seperti biasa
-        Integer x = 12;
-        Integer y = 22;
-        Integer z = 50;
-        System.out.println(x + y + z);
+       // Good
+        Integer minutePerHour = 60;
 
-        // Simple declare multiple
-        Integer myAge = 25, ariAge = 25, fahlanAge = 22, daudAge = 24, hanifAge = 24;
-        System.out.println(myAge + ariAge + fahlanAge + daudAge + hanifAge);
-
-        // Beberapa variable untuk satu nilai
-        int u, l, i;
-        u = l = i = 20;
-        System.out.println(u);
-        System.out.println(l);
-        System.out.println(i);
+        // ini bisa, tapi tidak mudah di ketahui ini sebenarnya nilai apa
+        Integer m = 60;
     }
 
 }
