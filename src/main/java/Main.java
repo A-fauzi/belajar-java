@@ -10,35 +10,22 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        /**
-         * Deklarasi variable
-         */
-        String name = "Akhmad Fauzi";
-        Integer age = 25;
-        Boolean isStatus = false;
-        Double height = 165.0;
-        Character initialsName = 'A';
+        // Declare variable seperti biasa
+        Integer x = 12;
+        Integer y = 22;
+        Integer z = 50;
+        System.out.println(x + y + z);
 
-        Integer number1 = 25;
-        Integer number2 = 25;
-        Integer result = number1 + number2;
+        // Simple declare multiple
+        Integer myAge = 25, ariAge = 25, fahlanAge = 22, daudAge = 24, hanifAge = 24;
+        System.out.println(myAge + ariAge + fahlanAge + daudAge + hanifAge);
 
-        // Mencetak variable
-        System.out.println("initial name: " + initialsName);
-        System.out.println("name: " + name);
-        System.out.println("age: " + age);
-        System.out.println("Status: " + isStatus);
-        System.out.println("height: " + height);
-        System.out.println(result);
-
-        // menetapkan nilai baru
-        age = 15;
-        System.out.println("nilai age baru: " + age);
-
-//        // Keyword final adalah nilai untuk dijadikan konstan
-//        final Integer myNum = 100;
-//        // jika nilai konstant di tetapkan ke nilai baru maka kompile error
-//        myNum = 125;
+        // Beberapa variable untuk satu nilai
+        int u, l, i;
+        u = l = i = 20;
+        System.out.println(u);
+        System.out.println(l);
+        System.out.println(i);
     }
 
 }
