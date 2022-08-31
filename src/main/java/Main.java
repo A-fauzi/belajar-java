@@ -7,81 +7,84 @@ public class Main {
 
     /**
      * fungsi main adalah fungsi utama untuk menjalankan program di Java
+     *
      * @param args
      */
     public static void main(String[] args) {
-        // JAVA OPERATOR
-        int x = 10 + 10;
-        System.out.println(x);
+        // Java String
+        // String digunakan untuk menyimpan teks.
+        // Variabel Stringberisi kumpulan karakter yang dikelilingi oleh tanda kutip ganda:
+        String name = "Akhmad Fauzi";
 
-        int sum1 = 100; // 100
-        int sum2 = sum1 + 100; // 100 + 100
-        int sum3 = sum1 + sum2 + 100; // 100 + 200 + 100
-        System.out.println(sum1);
-        System.out.println(sum2);
-        System.out.println(sum3);
+        // String length
+        int length = name.length();
+        System.out.println("Panjang string " + name + " adalah: " + length);
 
-        // Arithmetic Operators
-        int addition = 10 + 10; // 20
-        System.out.println(addition);
+        // String method
+        // Ada banyak metode string yang tersedia, misalnya toUpperCase()dan toLowerCase() dll.
+        String upperCase = name.toUpperCase();
+        System.out.println(upperCase);
 
-        int subtraction = 10 - 5; // 5
-        System.out.println(subtraction);
+        String lowerCase = name.toLowerCase();
+        System.out.println(lowerCase);
 
-        int multiplication = 10 * 10; // 100
-        System.out.println(multiplication);
+        // Finding a Character in a String
+        // Metode indexOf()mengembalikan indeks (posisi) kemunculan pertama dari teks yang ditentukan dalam string (termasuk spasi):
+        int indexOfString = name.indexOf("Fauzi"); // 7
+        System.out.println(indexOfString);
 
-        int division = 10 / 2; // 5
-        System.out.println(division);
+        // String Concatenation
+        // Operator +dapat digunakan di antara string untuk menggabungkannya. Ini disebut penggabungan :
+        System.out.println("Akhmad" + " " + "Fauzi");
+        // juga dapat menggunakan concat()metode untuk menggabungkan dua string:
+        String firstName = "Akhmad";
+        String lastName = "Fauzi";
+        System.out.println(firstName.concat(" ").concat(lastName));
 
-        int module = 10 % 3; // 1
-        System.out.println(module);
+        // Adding Numbers and Strings
+        /*
+            PERINGATAN!
 
-        int increment = ++addition; // 21
-        System.out.println(increment);
+            Java menggunakan +operator untuk penambahan dan penggabungan.
 
-        int decrement = --increment;
-        System.out.println(decrement);
+            Angka ditambahkan. String digabungkan.
+         */
+
+        int x = 10;
+        int y = 10;
+        int z = x + y; // 20
+        System.out.println(z);
+
+        String num1 = "10";
+        String num2 = "10";
+        String result = num1 + num2;
+        System.out.println(result); // 1010
+
+        String string = "10";
+        int number = 10;
+        String result2 = string + number;
+        System.out.println(result2); // 1010
 
 
-        // Java Assignment Operators
-        // Operator penugasan digunakan untuk menetapkan nilai ke variabel.
+        // Special character
+        //Karena string harus ditulis dalam tanda kutip, Java akan salah memahami string ini, dan menghasilkan kesalahan:
+        // String txt = "We are the so-called "Vikings" from the north."; // salah
+        String txt = "We are the so-called \"Vikings\" from the north.";
+        System.out.println(txt);
+
+        // Urutan \'  menyisipkan satu kutipan dalam sebuah string:
+        String txtAgain = "It's amazing";
+        System.out.println(txtAgain);
+
+        // Urutan \\  menyisipkan satu garis miring terbalik dalam sebuah string:
+        String txtAgain2 = "Makan \\ minum";
+        System.out.println(txtAgain2);
+
+        // newline \n
+        String txtNewLine = "Hello\nworld";
+        System.out.println(txtNewLine);
+
         //
-        //Dalam contoh di bawah ini, kita menggunakan operator penugasan= ( ) untuk menetapkan nilai 10 ke variabel yang disebut x :
-        int assigment = 10;
-        System.out.println(assigment);
-
-        // Operator penugasan tambahan ( +=) menambahkan nilai ke variabel:
-        assigment += 5; // 15
-        System.out.println(assigment);
-
-        assigment -= 5; // 10
-        System.out.println(assigment);
-
-        assigment *= 10; // 100
-        System.out.println(assigment);
-
-        assigment /= 2; // 50
-        System.out.println(assigment);
-
-        assigment %= 3; // 2
-        System.out.println(assigment);
-
-        // Java Comparison Operators
-        // Operator perbandingan digunakan untuk membandingkan dua nilai:
-        String check = "check";
-        System.out.println(check == "check"); // true
-        System.out.println(check != "check"); // false
-        System.out.println(check.length() > 5); // false
-        System.out.println(check.length() < 5); // false
-        System.out.println(check.length() >= 5); // true
-        System.out.println(check.length() <= 5); // true
-
-        // Java Logical Operator
-        // Operator logika digunakan untuk menentukan logika antar variabel atau nilai:
-        System.out.println(true && true); // true
-        System.out.println(true || false); // true
-        System.out.println(!true); // false
     }
 
 }
