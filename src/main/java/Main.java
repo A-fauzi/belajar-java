@@ -10,11 +10,13 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-       // Good
-        Integer minutePerHour = 60;
+        int myNum = 30; // Integer (whole number)
+        float myFloatNum = 5.99f; // Tipe data floating point
+        char myChar = 'B'; // Tipe data character
+        boolean myBool = true; // Tipe data boolean
+        String myText = "Akhmad Fauzi"; // Tipe Data String
 
-        // ini bisa, tapi tidak mudah di ketahui ini sebenarnya nilai apa
-        Integer m = 60;
+        System.out.println(myNum);
     }
 
 }
