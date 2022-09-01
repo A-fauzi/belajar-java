@@ -11,47 +11,45 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        // BREAK AND CONTINUE
+        // Array
+        String[] name = {"User 1", "User 2",  "User 3", "User 4", "User 5"};
 
-        // Break
-        // pernyataan break juga dapat digunakan untuk menghentikan kondisi tertentu jika kondisi true
-        for (int i = 0; i < 10; i++) {
-            if (i == 4) {
-                break;
-            }
-            System.out.println(i);
-        }
+        // Access element in array by index
+        System.out.println(name[0]);
 
-        // Continue
-        // Pernyataan continuememecah satu iterasi (dalam loop), jika kondisi tertentu terjadi, dan berlanjut dengan iterasi berikutnya dalam loop.
+        // Cek panjang element pada array
+        System.out.println(name.length);
+
+        // Mengganti element pada array berdasarkan index
+        name[0] = "User 1 Update";
+        System.out.println(name[0]);
+
+
+        // Loop Through an Array
+        // Anda dapat mengulang elemen array dengan forloop, dan menggunakan length properti untuk menentukan berapa kali loop harus dijalankan.
         //
-        // Contoh ini melewatkan nilai 4
-        for (int i = 0; i < 10; i++) {
-            if (i == 4) {
-                continue;
+        // Contoh berikut menampilkan semua elemen dalam array mobil :
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        for (int i = 0; i < cars.length; i++) {
+            System.out.println("index ke " + i + ":" + cars[i]);
+        }
+
+        // Menggunakan foreach untuk mengakses array
+        for (String e : cars){
+            System.out.println(e);
+        }
+
+        //  Arrays multidimensi
+        // Array multidimensi adalah array dari array.
+        int[][] arrMulDim = {{1, 2, 3}, {4, 5, 6}};
+        System.out.println(arrMulDim[0][2]); // 3
+
+        // Kita juga bisa menggunakan for loopinside another for loopuntuk mendapatkan elemen array dua dimensi (kita masih harus menunjuk ke dua indeks):
+        for (int i = 0; i < arrMulDim.length; ++i) {
+            for(int j = 0; j < arrMulDim[i].length; ++j) {
+                System.out.println(arrMulDim[i][j]);
             }
-            System.out.println(i); // 0, 1, 2, 3, 5
         }
-
-        // Break and continue in while loop
-        // Anda juga dapat menggunakan breakdan continuedalam perulangan while:
-        int i = 0;
-        while (i < 10) {
-            System.out.println("cetak ke " + i);
-            i++;
-            if (i == 5) break;
-        }
-
-        int a = 0;
-        while (a < 10) {
-            if (a == 5) {
-                a++;
-                continue;
-            }
-            System.out.println("cetak ke " + a);
-            a++;
-        }
-
     }
 
 }
