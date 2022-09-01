@@ -5,54 +5,54 @@ import java.awt.*;
  */
 public class Main {
 
-    // Attribute class di java
-
-    // attribute class
-    // istilah lain dari attribute adalah field
-    int x = 10;
-    final int y = 10;
-
-    // Menambahkan beberapa attribute
-    String fName = "Akhmad";
-    String lName = "Fauzi";
-    int age = 25;
-    String email = "akhmadfauzi@gmail.com";
-
+    // main method
     public static void main(String[] args) {
-        // mengakses attribute
-        Main objX = new Main();
-        Main objY = new Main();
-        System.out.println(objX.x);
-        System.out.println(objY.y);
+        greeting("boyan");
 
-        // Ubah nilai pada attribute
-        int x = objX.x = 1;
-//        int y = objY.y = 1; // not assigment, karna attribute tersebut adalah final
-        System.out.println(x);
-//        System.out.println(y);
+        // Call myStaticMethod()
+        myStaticVoid();
 
-        // cara merubah attribute yang final
+        // Call myPublicMethod()
+        Main objPublicMethod = new Main();
+        objPublicMethod.myPublicVoid();
 
-//        objY.y = 20; // not assigment
-        int changeFinalAttribute = objY.y;
-        changeFinalAttribute = 20;
-        System.out.println(changeFinalAttribute);
+        // Access method an object Car
+        Main car = new Main();
+        car.fullThrottle();
+        car.speed(200);
 
-        // Beberapa Object
-        Main obj1 = new Main();
-        Main obj2 = new Main();
-        Main obj3 = new Main();
-        System.out.println(obj1.x);
-        System.out.println(obj2.x);
-        System.out.println(obj3.x);
-
-        // Beberapa attribute
-        Main obj = new Main();
-        System.out.println("first name: " + obj.fName);
-        System.out.println("last name: " + obj.lName);
-        System.out.println("age: " + obj.age);
-        System.out.println("email: " + obj.email);
     }
 
+    // Method class java
+    public static void greeting(String name) {
+        System.out.println("Hello " + name);
+    }
 
+    // static vs non static
+    // Anda akan sering melihat program Java yang memiliki salah satu static atau public atribut dan metode.
+    // Pada contoh di atas, kami membuat sebuah static metode,
+    // yang berarti dapat diakses tanpa membuat objek kelas, tidak seperti public, yang hanya dapat diakses oleh objek:
+
+
+    // static method
+    static void myStaticVoid() {
+        System.out.println("static dapat di akses tanpa membuat object");
+    }
+
+    // public method
+    public void myPublicVoid() {
+        System.out.println("public hanya dapat di akses oleh object");
+    }
+
+    // Access Methods With an Object
+
+    // create a fullThrottle() method
+    public void fullThrottle(){
+        System.out.println("Mobil sedang berjalan dengan cepat!");
+    }
+
+    // create a speed() method and add a parameter
+    public void speed(int maxSpeed) {
+        System.out.println("Max speed is " + maxSpeed);
+    }
 }
