@@ -33,6 +33,25 @@ public class Main {
             System.out.println(i); // 0, 1, 2, 3, 5
         }
 
+        // Break and continue in while loop
+        // Anda juga dapat menggunakan breakdan continuedalam perulangan while:
+        int i = 0;
+        while (i < 10) {
+            System.out.println("cetak ke " + i);
+            i++;
+            if (i == 5) break;
+        }
+
+        int a = 0;
+        while (a < 10) {
+            if (a == 5) {
+                a++;
+                continue;
+            }
+            System.out.println("cetak ke " + a);
+            a++;
+        }
+
     }
 
 }
