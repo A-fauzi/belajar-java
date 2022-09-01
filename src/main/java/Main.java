@@ -7,52 +7,15 @@ public class Main {
 
     // main method
     public static void main(String[] args) {
-        greeting("boyan");
+        Constructor obj = new Constructor(); // buat object untuk memanggil attribute yang ada didalam class Constructor
+        Constructor objConstructParam = new Constructor(10); // create object parameter
+        System.out.println(obj.x);
+        System.out.println(objConstructParam.x);
 
-        // Call myStaticMethod()
-        myStaticVoid();
+        Constructor car = new Constructor("Yariz", "Toyota", 2020); // buat object untuk menginisialisasikan property Car
+        System.out.println("Car Name " + car.carName);
+        System.out.println("Car Model " + car.carModel);
+        System.out.println("Car Year " + car.carYear);
 
-        // Call myPublicMethod()
-        Main objPublicMethod = new Main();
-        objPublicMethod.myPublicVoid();
-
-        // Access method an object Car
-        Main car = new Main();
-        car.fullThrottle();
-        car.speed(200);
-
-    }
-
-    // Method class java
-    public static void greeting(String name) {
-        System.out.println("Hello " + name);
-    }
-
-    // static vs non static
-    // Anda akan sering melihat program Java yang memiliki salah satu static atau public atribut dan metode.
-    // Pada contoh di atas, kami membuat sebuah static metode,
-    // yang berarti dapat diakses tanpa membuat objek kelas, tidak seperti public, yang hanya dapat diakses oleh objek:
-
-
-    // static method
-    static void myStaticVoid() {
-        System.out.println("static dapat di akses tanpa membuat object");
-    }
-
-    // public method
-    public void myPublicVoid() {
-        System.out.println("public hanya dapat di akses oleh object");
-    }
-
-    // Access Methods With an Object
-
-    // create a fullThrottle() method
-    public void fullThrottle(){
-        System.out.println("Mobil sedang berjalan dengan cepat!");
-    }
-
-    // create a speed() method and add a parameter
-    public void speed(int maxSpeed) {
-        System.out.println("Max speed is " + maxSpeed);
     }
 }
