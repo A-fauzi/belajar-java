@@ -11,28 +11,26 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        // For Loop
+        // BREAK AND CONTINUE
+
+        // Break
+        // pernyataan break juga dapat digunakan untuk menghentikan kondisi tertentu jika kondisi true
         for (int i = 0; i < 10; i++) {
-            System.out.println(i);
-        }
-        /*
-            Pernyataan 1 menetapkan variabel sebelum loop dimulai (int i = 0).
-
-            Pernyataan 2 mendefinisikan kondisi untuk menjalankan loop (i harus kurang dari 5). Jika kondisi benar, loop akan dimulai lagi, jika salah, loop akan berakhir.
-
-            Pernyataan 3 meningkatkan nilai (i++) setiap kali blok kode dalam loop telah dieksekusi.
-         */
-
-        // Contoh ini hanya akan mencetak nilai genap antara 0 dan 10:
-        for (int i = 0; i <= 10; i += 2){
+            if (i == 4) {
+                break;
+            }
             System.out.println(i);
         }
 
-        // Java Foreach
-        // Ada juga loop " for-each ", yang digunakan secara eksklusif untuk mengulang elemen dalam array :
-        String[] car = {"car 1", "car 2", "car 3"};
-        for (String i : car) {
-            System.out.println(i);
+        // Continue
+        // Pernyataan continuememecah satu iterasi (dalam loop), jika kondisi tertentu terjadi, dan berlanjut dengan iterasi berikutnya dalam loop.
+        //
+        // Contoh ini melewatkan nilai 4
+        for (int i = 0; i < 10; i++) {
+            if (i == 4) {
+                continue;
+            }
+            System.out.println(i); // 0, 1, 2, 3, 5
         }
 
     }
