@@ -11,38 +11,28 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        String day = "ddd";
+        // Loop
+        // Loop dapat mengeksekusi blok kode selama kondisi tertentu tercapai.
+        // Loop berguna karena menghemat waktu, mengurangi kesalahan, dan membuat kode lebih mudah dibaca.
 
-        // Java Switch Statements
-        // Gunakan switchpernyataan untuk memilih salah satu dari banyak blok kode yang akan dieksekusi.
-        switch (day.toLowerCase()) {
-            case "senin":
-                System.out.println("Kerja");
-                break;
-            case "selasa":
-                System.out.println("Kerja");
-                break;
-            case "rabu":
-                System.out.println("Kerja");
-                break;
-            case "kamis":
-                System.out.println("Kerja");
-                break;
-            case "jumat":
-                System.out.println("Kerja");
-                break;
-            case "sabtu":
-                System.out.println("Libur");
-                break;
-            case "minggu":
-                System.out.println("Libur");
-                break;
+        // Java while loop
+        // Loop whileloop melalui blok kode selama kondisi yang ditentukan adalah true:
 
-                // default akan dijalankan jika kondisi tidak ada kecocokan
-            default:
-                System.out.println("Hari tidak ada");
-
+        int num = 0;
+        while (num < 10) {
+            System.out.println(num);
+            num++;
         }
+
+        // Do-While
+        // Loop do/whileadalah varian dari whileloop.
+        // Loop ini akan mengeksekusi blok kode satu kali, sebelum memeriksa apakah kondisinya benar, kemudian akan mengulangi loop selama kondisinya benar.
+        // Loop akan selalu dieksekusi setidaknya sekali, bahkan jika kondisinya salah, karena blok kode dieksekusi sebelum kondisi diuji:
+        int i = 0;
+        do {
+            System.out.println("cetak" + " " + i);
+            i++;
+        } while (i < 10);
     }
 
 }
