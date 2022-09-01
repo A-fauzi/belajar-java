@@ -11,8 +11,6 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        String day = "ddd";
-
         // Java Boolean
         // Sangat sering, dalam pemrograman, Anda memerlukan tipe data yang hanya dapat memiliki satu dari dua nilai, seperti:
         // YA TIDAK
@@ -62,7 +60,6 @@ public class Main {
             System.out.println("Good night");
         }
 
-
         // Ternary Operator
 
         // Short Hand If...Else
@@ -74,4 +71,3 @@ public class Main {
 
     }
 }
-
