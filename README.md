@@ -1,10 +1,7 @@
-# Java Polymorphism
-> Polimorfisme berarti "banyak bentuk", dan itu terjadi ketika kita memiliki banyak kelas yang terkait satu sama lain melalui pewarisan.
+# Abstract class and method
+> Abstraksi data adalah menyembunyikan detail tertentu dan hanya menampilkan informasi penting kepada pengguna.
+> Abstraksi dapat dicapai dengan abstract class atau interface
 > 
-> Inheritance memungkinkan kita mewarisi attribute dan method dari class lain. 
-> Polimorfisme menggunakan metode tersebut untuk melakukan tugas yang berbeda. Ini memungkinkan kita untuk melakukan satu tindakan dengan cara yang berbeda.
-> 
-> Misalnya, pikirkan sebuah superclass yang disebut Animalyang memiliki metode yang disebut animalSound(). 
-> Subkelas Hewan dapat berupa Babi, Kucing, Anjing, Burung - Dan mereka juga memiliki implementasi sendiri dari suara hewan (babi oinks, dan kucing mengeong, dll.):
-> 
-> 
+> Kata abstract adalah non akses modifier, digunakan untuk class dan method
+>  - Abstract class: adalah class terbatas yang tidak dapat digunakan untuk membuat object(untuk mengakses nya harus di warisi dari class lain)
+>  - Abstract method: hanya dapat digunakan di abstract class, dan tidak memiliki body, body di sediakan oleh subclass yang di warisi

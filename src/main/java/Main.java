@@ -6,12 +6,8 @@ import java.util.Scanner;
 public class Main {
     // main method
     public static void main(String[] args) {
-        Animals myAnimals = new Animals(); // Create animals object
-        Dog myDog = new Dog(); // Create Dog Object
-        Pig myPig = new Pig(); // Create Pig Object
-
-        myAnimals.animalSound();
-        myDog.animalSound();
+        Pig myPig = new Pig();
         myPig.animalSound();
+        myPig.sleep();
     }
 }

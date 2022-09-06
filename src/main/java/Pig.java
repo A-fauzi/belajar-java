@@ -1,6 +1,6 @@
-// Child class
-public class Pig extends Animals {
+public class Pig extends Animals{
     public void animalSound() {
-        System.out.println("The Pig Says: Wee wee");
+        // The body of animalSound() is provided here
+        System.out.println("The Pig Say: wee wee");
     }
 }
