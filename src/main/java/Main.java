@@ -13,6 +13,5 @@ public class Main {
         myAnimals.animalSound();
         myDog.animalSound();
         myPig.animalSound();
-
     }
 }
