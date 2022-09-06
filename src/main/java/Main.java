@@ -1,4 +1,4 @@
-import java.awt.*;
+import java.util.Scanner;
 
 /**
  * Untuk penamaan class di java harus sama dengan nama file
@@ -6,8 +6,9 @@ import java.awt.*;
 public class Main {
     // main method
     public static void main(String[] args) {
-        Person obj = new Person();
-        obj.setName("Tikus");
-        System.out.println(obj.getName());
+        System.out.println("Enter username");
+        String inputUsername = new Scanner(System.in).nextLine(); // Input Scanner
+
+        System.out.println("Your name is " + inputUsername);
     }
 }
