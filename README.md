@@ -1,20 +1,10 @@
-# Java Inner Class
-> Di Java, juga dimungkinkan untuk membuat class bersarang (class dialam class). 
-> Tujuan dari class bersarang adalah untuk mengelompokan class yang dimiliki class bersama, 
-> yang membuat kode lebih mudah dibaca dan dipelihara.
+# Java Polymorphism
+> Polimorfisme berarti "banyak bentuk", dan itu terjadi ketika kita memiliki banyak kelas yang terkait satu sama lain melalui pewarisan.
 > 
-> Untuk mengakses inner class, buat object outher class, lalu buat object inner class
-
-# Private Inner Class
-> Tidak seperti class reguler, inner class dapat berupa private atau protected.
-> Jika tidak ingin object luar mengakses innerclass, nyatakan private
+> Inheritance memungkinkan kita mewarisi attribute dan method dari class lain. 
+> Polimorfisme menggunakan metode tersebut untuk melakukan tugas yang berbeda. Ini memungkinkan kita untuk melakukan satu tindakan dengan cara yang berbeda.
 > 
-
-# Static Inner Class
->  Inner class juga dapat berupa static, yang berarti dapat mengaksesnya tanpa membuat object dari outer class
+> Misalnya, pikirkan sebuah superclass yang disebut Animalyang memiliki metode yang disebut animalSound(). 
+> Subkelas Hewan dapat berupa Babi, Kucing, Anjing, Burung - Dan mereka juga memiliki implementasi sendiri dari suara hewan (babi oinks, dan kucing mengeong, dll.):
 > 
-> 
-
-# Access Outer Class From Inner Class
-> Salah satu keuntungan inner class, inner class dapat mengakses attribute dan method outer class
 > 

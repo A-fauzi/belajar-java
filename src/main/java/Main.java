@@ -1,30 +1,18 @@
-class OuterClass {
-    int x = 10;
+import java.util.Scanner;
 
-//    class InnerClass { // Reguler class
-//        int x = 5;
-//    }
-
-    static class InnerClass { // Static class
-        int x = 5;
-
-        public String greetings() {
-            return "Hello";
-        }
-    }
-//    private class InnerClass { // Private class tidak dapat di akses dari outer class
-//        int x = 5;
-//    }
-
-}
-
+/**
+ * Untuk penamaan class di java harus sama dengan nama file
+ */
 public class Main {
+    // main method
     public static void main(String[] args) {
-        OuterClass outerClass = new OuterClass();
-        OuterClass.InnerClass innerClass = new OuterClass.InnerClass();
-        System.out.println(innerClass.x + outerClass.x);
+        Animals myAnimals = new Animals(); // Create animals object
+        Dog myDog = new Dog(); // Create Dog Object
+        Pig myPig = new Pig(); // Create Pig Object
 
-        OuterClass.InnerClass innerClass1 = new OuterClass.InnerClass();
-        System.out.println(innerClass1.greetings()); // Access method in innerclass
+        myAnimals.animalSound();
+        myDog.animalSound();
+        myPig.animalSound();
+
     }
 }
